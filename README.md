@@ -10,7 +10,7 @@ A router realized by observe location.hash
 因此尝试写一个简单的jquery插件来解决问题
 
 目标效果：
-点击类似<a href="#production">这样的a标签更改主页的hash
+点击类似\<a href="#production"\>这样的a标签更改主页的hash
 插件通过onhashchange事件来监视hash的变化，将配置中相应的html路径赋值给iframe
 一次来实现iframe的跳转，并且将对应的a标签高亮。
 
