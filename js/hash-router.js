@@ -25,7 +25,7 @@ var HashRouter = (function(){
     this.ele.onload = function (){
       var ifraHeight = $(_this.ele).contents().find('body').height()+60;
       $(_this.ele).height(ifraHeight);
-      console.log(ifraHeight);
+      console.log($(_this.ele).contents());
     };
   };
   HashRouter.prototype.hashChanged = function (){
