@@ -23,9 +23,9 @@ var HashRouter = (function(){
   HashRouter.prototype.calcHeight = function (){
     var _this = this;
     this.ele.onload = function (){
-      var ifraHeight = $(_this.ele).contents().find('body').height()+60;
+      var ifraHeight = $(_this.ele.contentWindow.documentBody).height()+60;
       $(_this.ele).height(ifraHeight);
-      console.log($(_this.ele).contents());
+      console.log(_this.ele.contentWindow);
     };
   };
   HashRouter.prototype.hashChanged = function (){
